@@ -4,7 +4,7 @@
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="64"/>
       <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
       <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
       <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -46,7 +46,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:5x4YgxNnzzydcdSF8DjZQZdAXCErt7PyDb2X2s9j"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lJi4RtnUpKXtZl3f8XPQzX/4X8Zscyt9OGL/JPgr"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -96,7 +96,7 @@
       <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0+d2ozF+heBO0U9+ZkimxcRd4hbJ1WMiYzq2sSBL"/>
+      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rv2t69q5zJDPGeUXEZr29XDn0INynqIRboDVCfQ0"/>
       <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
       <elementParameter field="DBTABLE" name="TABLE" value=""/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -142,13 +142,13 @@
       <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" value="((String)globalMap.get(&quot;UserID&quot;))"/>
-      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FJ7IybPEnp5VF3R1xdmsdEjDCD+yT+JVVPwvl4upUZSlvnkwdHKDnDVPJtWW58KQhMDs5RR5tjzCv0TFI0Cv"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QzceBoDfPfe5YEQ0FgaoiaqxxoSJXTInWhffSRhbgaQrR9XLX3yI9gbz8AXBXhI/TxFP5qA01mK5hHqCB5Jp"/>
       <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
       <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:kXXa8nED+tYcVm++w6IVZwQdxDNczjgVrpQtiddw"/>
+      <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:DYe895TwMlOo96Cmtw7V9M3c91hk2dE1uQd+iR0h"/>
       <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
       <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:aVCJmOQ3TCLASei5HdqOJPh5XRT6ju2RoBV3gwUY"/>
+      <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:jlSo5zFRzpbo6T7Yi/1iZOMBiTRlR0nB3hmYAxVY"/>
       <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -167,8 +167,14 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
     </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    </connection>
     <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tDBConnection_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
     </connection>
     <subjob>
       <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -179,6 +185,16 @@
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_OUTPUT_1"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
@@ -195,15 +211,33 @@
         <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR2" type="id_Dynamic" usefulColumn="true"/>
       </metadata>
     </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="256" posY="0" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="608" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e03a5a38-6750-4990-9e13-de8b4a3e3517"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y2xNgbjn3Kv5DAt/XYbvWgsLdGd2aq8WWkpqpMT1XKsnguNZbEh14F7A5+YkL3DJkgbhBQFT6EDI&#13;
-+coxv7qIrA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b6a82fe2-0db7-4962-a4e2-b0dde64211c7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rvw4bk18emN8Pp4Kyt3fa8czBUZ20S6wzzg1ZwMxZ/npbod9oIp6Tv3FyvSHZaEehnIPgrePBy+Y&#13;
-JUhkmGFv2A==</DigestValue></Reference></SignedInfo><SignatureValue>fB9fXyzZVT/4HIQM/gmsjMg5kvMkHRHsM456+bVQ+1EHE6Dm3xwiepOVfuCSpZWJfhShegM52edO&#13;
-H2GDAEUBQg3pLLl9UlvARTVb6CQXcu9pzNBJHqdDe28fj+pchyM0sKhZbupEhLh39z+yMY6hQZk2&#13;
-OX7yy2BZF+/+BneaaI5hbocflNmDahh0ZEOZJ/V/bQXdVlA31L3FY5EtnX07RWVDGMR0qBBE+Ezg&#13;
-0NE+O36q4lnuvC0nsOYrPIxOmJGLds0rC8lLLfs+w8OR7a+jntcnmJg21B2y8WlsCuZybGLsxA4F&#13;
-ZnYhcO+WJO97tNMfAIDClH9WGxsyfANZWBXLYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c96b1337-e56f-4d84-9f3f-a3ccaa0ab255"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uHoCp0XLCxZOrZk/RqQH/NRkJ00s2lkcJb8T9aHH/8rCO7f1LsO4l87EaBcpUgvGBKer5X5ntabB&#13;
+i3oyQtfsZQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_71373ad7-5aef-467f-b2be-b5210aa73422"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5sHY+aPMevtpH+V4VBfRTpxzkA2K2On7sgzhU6uOvX0Qq0cJtBMsJQtun+cHtC0No/yVS1dNGT8Z&#13;
+NAV4QkS1HA==</DigestValue></Reference></SignedInfo><SignatureValue>CahdVqyMrsgK2VwRIRDif+kBaRCIlsJII3uP/BFsW/QDSQA9GW7vsCXUbYXk6cTmpvp6wOt5zcKr&#13;
+qeWM+1SELbupkO1I9xjzjW1B8AiKt/MEFB/i/a7ROu2EGZYDJapMv53ejpxsk+pwT6GEpFzC9431&#13;
+l2y8LLcRyUoOrnsoL+xZZSCBDhU/0853OI/Le8qw+niDJ2aYoyDNvU0NEn9NcEWaNiMGa9MkyuTM&#13;
+GiwU89U2EZeDFO1EmwFcQTKLnDNZYr0phdjHvn2QUxuQDjeo0slo7mqg7eg+1VwhaplMT/YxrDgV&#13;
+UlZWdWTonLWgjON/AWCDbpQVRxuUZzlJDOO5Cw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -225,4 +259,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b6a82fe2-0db7-4962-a4e2-b0dde64211c7" Target="#_e03a5a38-6750-4990-9e13-de8b4a3e3517"><Timestamp>2022-01-08 10:45:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_71373ad7-5aef-467f-b2be-b5210aa73422" Target="#_c96b1337-e56f-4d84-9f3f-a3ccaa0ab255"><Timestamp>2022-01-08 10:59:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
