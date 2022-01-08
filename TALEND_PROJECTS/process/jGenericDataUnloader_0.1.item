@@ -48,7 +48,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:bOB+CExxBYXPJsK7uKue6o761CRywRxGATz4A8nh"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:IWZJqjiOjCVutk1OAbocUeM8U8GkZ8OfamWRbTJF"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TpFZ0WoRnn247nYisFSNHQj8bHbGF9sN44wliTIf"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JDlQonIUJDrypWnY2LpVziZI0k5Sjfs+zVXqx1sj"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -131,7 +131,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.configDBName"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:x6AkIBVbunWZ75R7tvU+IsfxW9O/tYg7+7UD3W+F"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fubP5euvdVZPLk7lXKBET+dIpUxLOwJP2/OHVFpI"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;integratedSecurity=true&quot;"/>
@@ -173,7 +173,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2Wud3uCFHdqjVrXGXs19n9ZQs9KLpXbQDyb2TtLo"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:q50tf4kuURgmaKlE5Tb21N7onyviSj8jYLiwG65h"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;JobConfig&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -225,29 +225,12 @@
       <column comment="" key="false" length="-1" name="Port" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
-    <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
-    <elementParameter field="TABLE" name="MAP">
-      <elementValue elementRef="KEY" value="&quot;DBType&quot;"/>
-      <elementValue elementRef="VALUE" value="DBType"/>
-      <elementValue elementRef="KEY" value="&quot;Server&quot;"/>
-      <elementValue elementRef="VALUE" value="Server"/>
-      <elementValue elementRef="KEY" value="&quot;UserID&quot;"/>
-      <elementValue elementRef="VALUE" value="UserID"/>
-      <elementValue elementRef="KEY" value="&quot;Password&quot;"/>
-      <elementValue elementRef="VALUE" value="Password"/>
-      <elementValue elementRef="KEY" value="&quot;IsADAuth&quot;"/>
-      <elementValue elementRef="VALUE" value="IsAdAuth"/>
-      <elementValue elementRef="KEY" value="&quot;Query&quot;"/>
-      <elementValue elementRef="VALUE" value="Query"/>
-      <elementValue elementRef="KEY" value="&quot;Port&quot;"/>
-      <elementValue elementRef="VALUE" value="Port"/>
-      <elementValue elementRef="KEY" value="&quot;DBName&quot;"/>
-      <elementValue elementRef="VALUE" value="DBName"/>
-    </elementParameter>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+    <metadata connector="FLOW" name="tJava_3"/>
   </node>
   <node componentName="jobletOracleDynamicLoad" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jOracleDynamicLoad_1"/>
@@ -302,7 +285,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if(((String)globalMap.get(&quot;IsADAuth&quot;)).equals(1)==true)&#10;{&#10;&#9;globalMap.put(&quot;AdditionaParams&quot;, &quot;integratedSecurity=true&quot;);&#10;}&#10;else&#10;{&#10;&#9;globalMap.put(&quot;AddionalParams&quot;, &quot;&quot;);&#10;&#9;}&#10;&#9;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(((String)globalMap.get(&quot;IsADAuth&quot;)).equals(1)==true)&#10;{&#10;&#9;globalMap.put(&quot;AdditionaParams&quot;, &quot;integratedSecurity=true&quot;);&#10;}&#10;else&#10;{&#10;&#9;globalMap.put(&quot;AddionalParams&quot;, &quot;&quot;);&#10;}&#10;&#9;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
@@ -360,21 +343,15 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_2" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_2" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
-  <connection connectorName="FLOW" label="Config" lineStyle="0" metaname="tDBInput_1" offsetLabelX="5" offsetLabelY="-2" source="tDBInput_1" target="tFlowToIterate_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Port"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Config"/>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFlowToIterate_1" target="tJava_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;DBType&quot;)).toUpperCase().equals(&quot;ORACLE&quot;)==true&#10;"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_3" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFlowToIterate_1" target="tJava_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;DBType&quot;)).toUpperCase().equals(&quot;MSSQL&quot;)==true&#10;"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_3" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="OUTPUT_1" label="row1" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" source="jOracleDynamicLoad_1" target="tLogRow_1">
@@ -437,13 +414,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f5fbba0d-6210-498d-a4c2-5b3e4a0fa976"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n9BEi8+VglmWq21CA0qCSogfRJAQHpdy8WcyldIy/g3ceh9vxdqDyFGx8+jXfGHfLMSdfDLf9eV7&#13;
-kA42/XyYaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1fe03e6a-b8a4-4d06-abf0-7669697ddadb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rYFjc2F9shzDm9fjxdc0CmreFs8NmtvMGrY2QqdsBuuwaHo1g1j/wdftIVul8jof0YIc5bqnQGZw&#13;
-B0mwv7umFA==</DigestValue></Reference></SignedInfo><SignatureValue>JVNoc8NXlmJNoyjTviPWkeYkf7lL/bzLAkCD+HiKHYJ4dWwai7U+HgdoZB3EQEc9bOjjvLf/dxgf&#13;
-RDwBL60S73R83SexJTCKEoXotav56n0bgPcqrGHSud6eDNGr4f15zco4y1BVxtQa9ykOFieAyTWH&#13;
-tvuq0zphLCgJFl4v2IdiZI/sMvrC7bO3pjKq1i5wO4VvDggzeGw7W0jdjG54xZWlHKrtKEglJkAQ&#13;
-vLEXoswVGtGMK89QVstMpyKSnZSxfogBVfsHvYmIWOq+4D9hAycBm+qGirKjBnqxgm+MbyC954Ob&#13;
-+C02gRqcRBGSgNeQYrkl07u5mPjvZ7NkJcF1cg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_eb9f3ed8-2c67-4978-8c13-49071461a022"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MfXJpNsEpP8ogvLol1JICPf0+/c9cONJguJp/HqIOapfYwzBiTDMP79WuG9v7pv+X+0AaVXnoD1W&#13;
+B7X+VgSePA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce4fab55-a373-40a5-ae65-b9deb84585b5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dw4EfjeRslFkMDTLsUBFGHYhA4EgaFPZ5lgr14eitFzgpo1HpL/FH/HJ47VtCnCsm1V2/87xHOOp&#13;
+4Gb88AAtag==</DigestValue></Reference></SignedInfo><SignatureValue>DBGtcG039pvrIJdVaegnZlKI0J8IWiERttquxlrdF4/bm0rhUf3f1Mp6o/giWvbJtgvONUAMyvDB&#13;
+NldRYfImC5Z0o8xYMFBJugN+Sl3vE8LDLDTFknWbX6ZqDMbQ5/JZNVCUR/iwNrI6L9JbCkuClmFe&#13;
+9zZm1886QJbIlR+57xw8sEZLdeRR4iFVKT92NZ4jcbZqQb3KYhLt/CAgHlQPiznaGI5cEUlnh7wf&#13;
+am+Goip9fDway5uRH85XsvcBrvl0yZJmYi8hn6v38Eno8MAkqSa7SdIrKQgpB5YOTe2v68s/C/Lc&#13;
+5kBN6rt35AodD0kVCmjB2J873qcaP0kUn6aTsQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -465,4 +442,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1fe03e6a-b8a4-4d06-abf0-7669697ddadb" Target="#_f5fbba0d-6210-498d-a4c2-5b3e4a0fa976"><Timestamp>2022-01-08 10:59:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce4fab55-a373-40a5-ae65-b9deb84585b5" Target="#_eb9f3ed8-2c67-4978-8c13-49071461a022"><Timestamp>2022-01-08 11:01:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
