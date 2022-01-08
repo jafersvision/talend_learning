@@ -46,7 +46,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:jybFrEf1c5iksmixcohUKF16qOEU/9abD7ak3z1/"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:2XFvk+iA2axDy1d4a3OH3qCIehorIvm3QsSqi+0v"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -82,43 +82,6 @@
       <routinesParameter id="_oWe2wGvuEeywpvCN0gHDdw" name="TalendStringUtil"/>
       <routinesParameter id="_oWLUwGvuEeywpvCN0gHDdw" name="TalendString"/>
     </parameters>
-    <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
-      <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
-      <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
-      <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
-      <elementParameter field="TEXT" name="HOST" value="context.server"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
-      <elementParameter field="TEXT" name="PORT" value="context.port"/>
-      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="USER" value="context.userid"/>
-      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RrPbFP9kwIWiW80n4FSknmtHXMEGDD0R8zcirrNb1NSqBD5SgNKDz6mJ1mo="/>
-      <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
-      <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:ef2Zh0Ivk2gu0/ewbpDvMLKiDudvFnx64jHSvwKN"/>
-      <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
-      <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:B7WED/yKUmxyGehrMae1XKV2mx2qhUnhInYKKqKf"/>
-      <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-      <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
-      <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
-      <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-      <elementParameter field="TEXT" name="LABEL" value="dbConOrcl"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    </node>
     <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="384">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -133,7 +96,7 @@
       <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rhHoMiDamynd1EpVi0mw2MDGv07gLlyDlgCslmew"/>
+      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2K2AVYF93HpplHOu5zJiXHhYMPLo8teQ/3INAsqS"/>
       <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
       <elementParameter field="DBTABLE" name="TABLE" value=""/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -164,44 +127,15 @@
         <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR2" type="id_Dynamic" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tOracleClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="576">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
-      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    </node>
-    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
-    </connection>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="OUTPUT_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
     </connection>
-    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBClose_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
-    </connection>
-    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tDBConnection_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-    </connection>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
     <subjob>
       <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
       <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Get Data from Oracle and Pass to Paret Job"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
     <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
@@ -217,24 +151,15 @@
         <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR2" type="id_Dynamic" usefulColumn="true"/>
       </metadata>
     </jobletNodes>
-    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128" trigger="true">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
-      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-      <elementParameter field="CHECK" name="START" show="false" value="true"/>
-      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
-      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-      <elementParameter field="MEMO" name="COMMENT" value=""/>
-    </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bbb87349-0c64-4be4-84e4-9da59e12c385"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+Ren/fpUGzGNeu/mkPr6BCJJE/6gUwf6OKXCvUzA3dM3MnXETuXqHKa7rV9qXD/3NwrTmf2TMQQz&#13;
-meUZmKJj9w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8315bbfa-e3a8-4d95-8676-0ab0d401c48c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EtvcTgEIIdebFFv9g5Vhipwgt98Fk1UlJh9B0fV4RVVKK+rFwm/HSwHNB3sEhW8VOIAzOY6sOt3L&#13;
-EphHi6+RKw==</DigestValue></Reference></SignedInfo><SignatureValue>RPDc1wHfIDeA/uWZes2CGRftGjtLbQiA2wIROXwd1yItRASmZOBsEC99/kMrZzKNA8l2zb9Ovz2I&#13;
-tOP7roInyHk8RU1c3/zOEzTqIIt8HAdqudqNbb6H5fT7gcyrDudX9sePJkU4sEDYKGZ+R9dFg89v&#13;
-FIIHBpmoGtkxuXtAN8daa+Q/sL1Wmxl0Bf0h0NdWo93hu4RESGZcluskNJ+dS7Up1K/pl6u8KCse&#13;
-tNfoT33Af3kj4JMCE2N1wR+Ne/o5CLFqBHh7AF0r4yQLxRcnO/qlVYPM3AN37X0luBaQDGxgdBTf&#13;
-8RDit5iMGULY1fGeHKO5B0NbzDqGuUoHjJ1HTg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c150db2c-95ab-44fd-beb1-b697ff598ad4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kzrp+U6+mTz1bgQeX7xXSID89uuDYNMetaGskGFhihAeDV5nceXIgt3gNTBrGsQUclZtjwtcL9i+&#13;
+N6JiBFKIXg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3700ae6d-e97d-4a5e-87b3-708ef0e7c9d4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i+D0s4l3R/V8LNiKxmFwdPH3fzygWD9kxWwlmFCbZk9wAN1w1hvz3wwq1SndqRWzOKzHi3voBk/z&#13;
+Cq4eCDskww==</DigestValue></Reference></SignedInfo><SignatureValue>gXliahVM2HB/qVw7A8ZXiupL0Cc14TLb7rnJgFOGpq04C/wpRjJItCTXCkjqVkjRUWA1LcilECwg&#13;
+98ltR302FWH5Lxj5Xo8oWPeBY7CIdO59QR+6133B7aGFkEqZRq9pd8l+hNB57EWTY5KzveERFBC6&#13;
+pHoayx0efYL9TjaZSR5KVP7T4Qd7703DwSbqqGlUd++gvsWV/lf1cn4BkmnaHkbSx8C0Pl0ohcAt&#13;
+fOrb5O+yVyo/e4J4H8MbbMSbMvBoOjU9gACJhCY1VSEUDKgHS31k0ZlBJ4f51USoJVrPgaeJzOe8&#13;
+wpAiIWotCV15jecbZ/UloEwKigCnIeeAHWlbGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -256,4 +181,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8315bbfa-e3a8-4d95-8676-0ab0d401c48c" Target="#_bbb87349-0c64-4be4-84e4-9da59e12c385"><Timestamp>2022-01-08 08:06:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3700ae6d-e97d-4a5e-87b3-708ef0e7c9d4" Target="#_c150db2c-95ab-44fd-beb1-b697ff598ad4"><Timestamp>2022-01-08 09:40:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
