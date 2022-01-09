@@ -58,10 +58,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_T3wzYHEeEey4H9yAJOj1vQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_T3wzYHEeEey4H9yAJOj1vQ - OnlineTransactionLogDelim",
     "version" : "Latest",
     "type" : "schema"
