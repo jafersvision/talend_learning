@@ -39,10 +39,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_uQHQ4HECEey4H9yAJOj1vQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
     "version" : "Latest",
     "type" : "schema"
