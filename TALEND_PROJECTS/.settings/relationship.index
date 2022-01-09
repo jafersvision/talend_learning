@@ -39,6 +39,14 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "_6XofgHEGEey4H9yAJOj1vQ - CustomerFile",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_93IPwHEHEey4H9yAJOj1vQ - CityVSCountryMap",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
     "version" : "Latest",
     "type" : "schema"
