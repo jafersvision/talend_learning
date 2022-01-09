@@ -53,6 +53,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_kjvCcHETEey4H9yAJOj1vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_oZ1dcHBnEey7c-_0lAKpNQ",
     "version" : "0.1",
     "type" : "job"
