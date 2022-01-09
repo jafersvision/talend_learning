@@ -1,5 +1,16 @@
 [ {
   "baseItem" : {
+    "id" : "_D90gAHDuEey4H9yAJOj1vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_bbR28HBUEeycnaQc4Q40YQ",
     "version" : "0.1",
     "type" : "job"
