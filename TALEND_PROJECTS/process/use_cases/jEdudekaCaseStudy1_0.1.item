@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:bRN1ppWLbNjuEd1tOYsriT/HsvGecueWPV8QCNN+"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:R3HBNeDPDdC1z7vTzwUsBEg5DngJbrS6cmHBlN9Q"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4mUdBEg8TdUshQlx1E/r9lNh6ESdW2MwqJEQSVCX"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+/A+fH36biPkn9ajRVM8mAOojeXfTxtDkDGBsEUG"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -207,54 +207,6 @@
       <column defaultValue="" key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="12"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MonthID"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MonthName"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
-    <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="MonthID" value="1"/>
-      <elementValue elementRef="MonthName" value="&quot;January&quot;"/>
-      <elementValue elementRef="MonthID" value="2"/>
-      <elementValue elementRef="MonthName" value="&quot;February&quot;"/>
-      <elementValue elementRef="MonthID" value="3"/>
-      <elementValue elementRef="MonthName" value="&quot;March&quot;"/>
-      <elementValue elementRef="MonthID" value="4"/>
-      <elementValue elementRef="MonthName" value="&quot;April&quot;"/>
-      <elementValue elementRef="MonthID" value="5"/>
-      <elementValue elementRef="MonthName" value="&quot;May&quot;"/>
-      <elementValue elementRef="MonthID" value="6"/>
-      <elementValue elementRef="MonthName" value="&quot;June&quot;"/>
-      <elementValue elementRef="MonthID" value="7"/>
-      <elementValue elementRef="MonthName" value="&quot;July&quot;"/>
-      <elementValue elementRef="MonthID" value="8"/>
-      <elementValue elementRef="MonthName" value="&quot;August&quot;"/>
-      <elementValue elementRef="MonthID" value="9"/>
-      <elementValue elementRef="MonthName" value="&quot;September&quot;"/>
-      <elementValue elementRef="MonthID" value="10"/>
-      <elementValue elementRef="MonthName" value="&quot;October&quot;"/>
-      <elementValue elementRef="MonthID" value="11"/>
-      <elementValue elementRef="MonthName" value="&quot;November&quot;"/>
-      <elementValue elementRef="MonthID" value="12"/>
-      <elementValue elementRef="MonthName" value="&quot;December&quot;"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="Generic Months"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="MonthID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MonthName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -287,16 +239,14 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="(employee_salary.Month==null || employee_salary.Month.equals(&quot;&quot;)) ? 0 : employee_salary.Sal " name="Salary" type="id_Double"/>
-      </varTables>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" columnNameFilter="" expressionFilter="employee_salary.Year.equals(&quot;2015&quot;)" name="emp_sal_clean" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="employee_salary.EMP_ID " name="EMP_ID" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="employee_salary.EMP_NAME " name="EMP_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries expression="employee_salary.EMP_PROJECT_ID " name="EMP_PROJECT_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="employee_salary.Year " name="Year" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Months.MonthID " name="MonthID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Var.Salary " name="Salary" type="id_Double"/>
+        <mapperTableEntries expression="employee_salary.Month " name="MonthID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="employee_salary.Sal " name="Salary" type="id_Double"/>
       </outputTables>
       <outputTables activateExpressionFilter="true" expressionFilter="employee_salary.Year.equals(&quot;2016&quot;)" name="emp" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="employee_salary.EMP_ID " name="EMP_ID" nullable="true" type="id_Integer"/>
@@ -304,23 +254,19 @@
         <mapperTableEntries expression="employee_salary.EMP_PROJECT_ID " name="EMP_PROJECT_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="employee_salary.Year " name="Year" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="employee_salary.Month " name="MonthID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Var.Salary " name="Salary" type="id_Double"/>
+        <mapperTableEntries expression="employee_salary.Sal " name="Salary" type="id_Double"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Months" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="MonthID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="MonthName" nullable="true" type="id_String"/>
-      </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="employee_salary" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="employee_salary" sizeState="INTERMEDIATE">
         <mapperTableEntries name="EMP_ID" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="" name="EMP_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="EMP_PROJECT_ID" nullable="true" type="id_String"/>
         <mapperTableEntries name="Year" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Months.MonthID " name="Month" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="" name="Month" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Sal" nullable="true" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="416">
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_cSl2AHDvEey4H9yAJOj1vQ"/>
@@ -417,7 +363,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:SwhkSBr6nWy7wsCiGqTsfD/RKBxJ37/L3GCEdJCC"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:i3xQVmE43nLwpXhlLe+2FMEUYmxpftWaUO5auvLk"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -472,7 +418,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:7XH7Yo3LOqMOzFsHvHBLWUd1p2VFTKQ9FGJozQ3E"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:1BDNtp58siySU/x9mmmHbHlB4DSLmqXzsqHFnlNf"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -511,10 +457,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Config"/>
   </connection>
-  <connection connectorName="FLOW" label="Months" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Months"/>
-  </connection>
   <connection connectorName="FLOW" label="emp_sal_clean" lineStyle="0" metaname="emp_sal_clean" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="emp_sal_clean"/>
@@ -551,17 +493,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a8b35a00-0cb7-4cad-96f9-806a7fafba23"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FPg2tu4ME0xzNPzwN0MRJru7pXZnC8g8pk1Tzrh5JBRgIbsewCXEjf/DeGM87rF8ppNI2/SqneSB&#13;
-Dt8em1OxBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_634f3c21-3aff-4348-a1b2-b43bda3d9c9d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6+fk6/0O9m3cGXgKguMmvRKHs8mkiXSj+mPN342EREwt1v/eNdbqDzHMHketZuOizo0PLlFWqXjv&#13;
-xyK4dDcWsA==</DigestValue></Reference></SignedInfo><SignatureValue>j2wgJSX2yd4qWK47TcdN/2tRKP5SBZSJ71vdkQ68XXb6zMsvy3VjCl2mzCjUzuwMzGAqnbb41HMa&#13;
-zPF5eR/ESe/F32CKpXTnSdvy4SQCUyjdHJ1NjdNUR3HDv3D6w8EB28ULSPKNUFMe/HUasQ6Uo68U&#13;
-FYU7JAgwp44FGGlKsk39pDiEfjjiPJ9eIVAki8z176ffUjbbr1JKx07w+teGRh11oVU/IhooJb+t&#13;
-bhCdTEvK95yjScdViklgM4iAXtPrNba3N9QqvzmrS7xrUfP2lIPj2Ii4cKdcgZlyEV6z1WuynuAz&#13;
-USxJg6MPKxUjAbVDglp4jgZ1AUjPcvOUzlWUzw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5afd7d14-fbb2-46fb-8bfd-d139ecbef81c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SunTCqfyYvPf00agLvPdjf8L7Tf2OMMdPIHHIoGmTTQpbn6/d+7KmAQT48A3ySX/zRbElcuP7hbn&#13;
+URiUjVPQqQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c037f891-ef77-41da-8c19-bcb70040bf68"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0bEHwVXrRVFY6B8QnDD7I2XmPLgsD40Fmxt/sbkboWgtWOKylWk8JXSfBvA15TihNOJVeMfPWKxI&#13;
+bGXD14rcQQ==</DigestValue></Reference></SignedInfo><SignatureValue>Oe/atDQreP43R9X9Cu560ubWCrHNLi9pCmbXaTRwCp8eQ1nKJIVJRMJvWqgKNlrdqF+n8gNHOmlA&#13;
+UM+1xOtDAC/UhoDCz5hzSwpgdDoCgU8wqbxhwSKh7uzJhB4FCoA5bDw3Fdz1cRGOz4yeb+FsMRrm&#13;
+0cPsK90gVesF8K6D50Jnv48qeRsF8rkPzQ+lmG8lKT0jU0P+Hnm78xs1aCRgLF5CYoX/pm8KkD6q&#13;
+ALauM4nzHI8loMTgaB9opJSWLW8U1deG2l14wSUJuwUEQ81mvjghwiA4BCfYyppNdPIHKRZaYGxT&#13;
+rqU/jzvN9WLtHwAhdER4v/Gws0vH2cr7VLx6rw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -583,4 +525,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_634f3c21-3aff-4348-a1b2-b43bda3d9c9d" Target="#_a8b35a00-0cb7-4cad-96f9-806a7fafba23"><Timestamp>2022-01-09 03:14:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c037f891-ef77-41da-8c19-bcb70040bf68" Target="#_5afd7d14-fbb2-46fb-8bfd-d139ecbef81c"><Timestamp>2022-01-09 03:18:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
