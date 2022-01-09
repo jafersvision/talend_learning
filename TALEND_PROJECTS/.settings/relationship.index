@@ -66,10 +66,6 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_T3wzYHEeEey4H9yAJOj1vQ - OnlineTransactionLogDelim",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
     "version" : "Latest",
     "type" : "schema"
