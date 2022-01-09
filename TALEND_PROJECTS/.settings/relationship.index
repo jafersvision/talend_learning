@@ -5,10 +5,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_cSl2AHDvEey4H9yAJOj1vQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_cSl2AHDvEey4H9yAJOj1vQ - meta_employee_xml",
     "version" : "Latest",
     "type" : "schema"
