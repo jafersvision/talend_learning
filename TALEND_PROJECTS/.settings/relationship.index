@@ -9,6 +9,18 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_IKIiAHH3EeyPiuP_t-JjTA - organization_details",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
     "version" : "Latest",
     "type" : "schema"
