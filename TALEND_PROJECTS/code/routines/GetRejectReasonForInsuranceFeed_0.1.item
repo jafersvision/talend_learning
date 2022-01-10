@@ -15,7 +15,7 @@ public class GetRejectReasonForInsuranceFeed {
      * 
      * {example} helloExemple("world") # hello world !.
      */
-    public static String helloExample(String Country,double Salary,int Age) {
+    public static String GetRejectReason(String Country,double Salary,int Age) {
     	String rejectReason;
         if (Age>70) {
             rejectReason = "Exceeds Maximum Age Limit"; 
