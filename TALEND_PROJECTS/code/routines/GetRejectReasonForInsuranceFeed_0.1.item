@@ -33,7 +33,7 @@ public class GetRejectReasonForInsuranceFeed {
      * {example} helloExemple("world") # hello world !.
      */
     public static String helloExample(String Country,double Salary,int Age) {
-    	String rejectReason
+    	String rejectReason;
         if (message == null) {
             message = "World"; //$NON-NLS-1$
         }
