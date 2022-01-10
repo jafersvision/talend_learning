@@ -34,8 +34,15 @@ public class GetRejectReasonForInsuranceFeed {
      */
     public static String helloExample(String Country,double Salary,int Age) {
     	String rejectReason;
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
+        if (Age>70) {
+            rejectReason = "Exceeds Maximum Age Limit"; 
+        }
+        else if(Country.toLowerCase()!="england") {
+        	rejectReason = "Applicant is non resident";
+        }else if(Salary <20000) {
+        	rejectReason ="Minimum Salary 20000 Not Met";
+        }else {
+        	rejectReason="";
         }
         return rejectReason;
     }
