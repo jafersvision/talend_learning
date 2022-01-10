@@ -108,6 +108,10 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "GetRejectReasonForInsuranceFeed",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "_5cSAwHHmEeyPiuP_t-JjTA - metadata_ins_cust_feed",
     "version" : "Latest",
     "type" : "schema"
