@@ -97,4 +97,23 @@
     "version" : "Latest",
     "type" : "joblet"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_wtiZ4HHkEeyPiuP_t-JjTA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_5cSAwHHmEeyPiuP_t-JjTA - metadata_ins_cust_feed",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
