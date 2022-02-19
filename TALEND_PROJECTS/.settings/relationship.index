@@ -1,1 +1,150 @@
-[ ]
+[ {
+  "baseItem" : {
+    "id" : "_0qIfYHHxEeyPiuP_t-JjTA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_IKIiAHH3EeyPiuP_t-JjTA - organization_details",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_D90gAHDuEey4H9yAJOj1vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_cSl2AHDvEey4H9yAJOj1vQ - meta_employee_xml",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_bbR28HBUEeycnaQc4Q40YQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_yFck8HBYEeycnaQc4Q40YQ",
+    "version" : "Latest",
+    "type" : "joblet"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_gL1BUHEDEey4H9yAJOj1vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_WV6FEHEDEey4H9yAJOj1vQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_6XofgHEGEey4H9yAJOj1vQ - CustomerFile",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_93IPwHEHEey4H9yAJOj1vQ - CityVSCountryMap",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_kjvCcHETEey4H9yAJOj1vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_9c1pAHEeEey4H9yAJOj1vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_9c1pAHEeEey4H9yAJOj1vQ - OnlineTransactionLogJson",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_T3wzYHEeEey4H9yAJOj1vQ - OnlineTransactionLogDelim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_oZ1dcHBnEey7c-_0lAKpNQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_-xQ40HBvEeytRf4WHfNvhA",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "_03hykHB6EeytRf4WHfNvhA",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "_yFck8HBYEeycnaQc4Q40YQ",
+    "version" : "Latest",
+    "type" : "joblet"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_wtiZ4HHkEeyPiuP_t-JjTA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "GetRejectReasonForInsuranceFeed",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_5cSAwHHmEeyPiuP_t-JjTA - metadata_ins_cust_feed",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_uLps0HDwEey4H9yAJOj1vQ - GenericSchemaContextLoad",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
