@@ -172,5 +172,9 @@
     "id" : "_tcI1YHH2EeyPiuP_t-JjTA",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA - customers",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 } ]
