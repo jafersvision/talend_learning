@@ -69,6 +69,10 @@
     "id" : "_p2vwwJFrEeygGddezeQY5Q",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_gmWyMJFlEeygGddezeQY5Q - tcdc_view_customers",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
