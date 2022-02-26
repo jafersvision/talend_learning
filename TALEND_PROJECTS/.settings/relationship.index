@@ -42,6 +42,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_JKPTsJcQEeyvr-VDSv2Dtw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_TC_VwJb1EeyVF6xsj5942Q",
     "version" : "0.1",
     "type" : "job"
@@ -233,5 +244,16 @@
     "id" : "_tcI1YHH2EeyPiuP_t-JjTA - customers",
     "version" : "Latest",
     "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_JKPTsJcQEeyvr-VDSv2Dtw",
+    "version" : "0.1",
+    "type" : "test_case"
+  },
+  "relatedItems" : [ {
+    "id" : "_UstGwJcPEeyvr-VDSv2Dtw",
+    "version" : "0.1",
+    "type" : "test_case"
   } ]
 } ]
