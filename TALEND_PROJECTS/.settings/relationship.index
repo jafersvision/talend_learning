@@ -47,15 +47,11 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_8y_bwHETEey4H9yAJOj1vQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_tcI1YHH2EeyPiuP_t-JjTA",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_8y_bwHETEey4H9yAJOj1vQ - CUSTOMERS_SCD_TABLE",
+    "id" : "_tcI1YHH2EeyPiuP_t-JjTA - customers",
     "version" : "Latest",
     "type" : "schema"
   } ]
