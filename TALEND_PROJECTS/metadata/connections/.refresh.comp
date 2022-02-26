@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_pKM38JcKEeyvr-VDSv2Dtw" name="OracleLocalConnection" id="_8y_bwHETEey4H9yAJOj1vQ" label="OracleLocalConnection" dataPackage="_pKNfAJcKEeyvr-VDSv2Dtw" DatabaseType="Oracle with service name" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=localhost)(port=1521))(connect_data=(service_name=XE)))" dbVersionString="ORACLE_18" Port="1521" Username="system" Password="enc:system.encryption.key.v1:Jw2iHeWFjNBPyC6cSI8vxsavIHXoEsoXrQsJJMzGrT22GYfA" ServerName="localhost" DatasourceName="" FileFieldName="" SID="XE" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="SYSTEM">
+    <taggedValue xmi:id="_pKM38ZcKEeyvr-VDSv2Dtw" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_pKM38pcKEeyvr-VDSv2Dtw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_pKM385cKEeyvr-VDSv2Dtw" tag="Status" value=""/>
+    <taggedValue xmi:id="_pKM39JcKEeyvr-VDSv2Dtw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pKM39ZcKEeyvr-VDSv2Dtw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_pKM39pcKEeyvr-VDSv2Dtw" tag="Description" value=""/>
+    <taggedValue xmi:id="_pKM395cKEeyvr-VDSv2Dtw" tag="Author" value=""/>
+    <taggedValue xmi:id="_pKM3-JcKEeyvr-VDSv2Dtw" tag="otherParameter"/>
+    <taggedValue xmi:id="_pKM3-ZcKEeyvr-VDSv2Dtw" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_pKM3-pcKEeyvr-VDSv2Dtw" tag="DB ProductVersion" value="Oracle Database 18c Express Edition Release 18.0.0.0.0 - Production&#xA;Version 18.4.0.0.0"/>
+    <taggedValue xmi:id="_pKM3-5cKEeyvr-VDSv2Dtw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_pKM3_JcKEeyvr-VDSv2Dtw" key="CONN_PARA_KEY_USERNAME" value="system"/>
+    <parameters xmi:id="_pKM3_ZcKEeyvr-VDSv2Dtw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_pKNfAJcKEeyvr-VDSv2Dtw" name="SYSTEM" dataManager="_pKM38JcKEeyvr-VDSv2Dtw"/>
+</xmi:XMI>
