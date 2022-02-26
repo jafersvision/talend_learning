@@ -125,6 +125,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_fzyVoJcfEeyh54BaTjkHNg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_p2vwwJFrEeygGddezeQY5Q - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_gL1BUHEDEey4H9yAJOj1vQ",
     "version" : "0.1",
     "type" : "job"
